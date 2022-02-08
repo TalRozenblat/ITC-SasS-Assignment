@@ -13,13 +13,26 @@ div {
 
 .wrapper{
     flex-direction: row;
+    position: absolute;
+    height:100%;
+    width:100%;
+    
 }
 
 .sideBar{
-    
+    flex-direction: column;
+    width:20%;
+}
+.sierra{
+    flex-direction:row;
+}
+
+.sierraDetails{
+    flex-direction:column;
 }
 .content{
-    flex-direction:column
+    flex-direction:column;
+    width:80%;
 }
 
 .tasks{
@@ -33,4 +46,9 @@ div {
 
 .sideBarList{
     list-style-type: none;
+}
+
+li div {
+    display:inline-block;
+    
 }
