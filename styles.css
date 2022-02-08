@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+div {
+    border: 1px red solid;
+    background-color: aquamarine;
+    display:flex;
+}
+
+
+.wrapper{
+    flex-direction: row;
+}
+
+.sideBar{
+    
+}
+.content{
+    flex-direction:column
+}
+
+.tasks{
+    flex-direction:row;
+}
+
+.charts{
+    flex-direction: column;
+}
+
+
+.sideBarList{
+    list-style-type: none;
+}
