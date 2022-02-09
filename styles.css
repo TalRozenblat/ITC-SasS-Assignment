@@ -5,8 +5,7 @@
 }
 
 div {
-    border: 1px red solid;
-    
+   
     display:flex;
 }
 
@@ -21,10 +20,16 @@ div {
 
 .sideBar{
     flex-direction: column;
-    width:20%;
+    width:100%;
+    max-width: 256px;
+
 }
 .sierra{
     flex-direction:row;
+    margin-bottom:3rem;
+    margin-top:2rem;
+    margin-left: 2rem;
+    
 }
 
 .sierraDetails{
@@ -37,6 +42,10 @@ div {
 
 .searchBar{
     flex-basis:7%;
+  
+}
+#searchSvg{
+    margin-top: 2.3rem;
 }
 .tasks{
     flex-direction:row;
@@ -47,44 +56,149 @@ div {
     flex-basis:54%;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
-    margin:70px;
+    margin:2rem 2rem 2rem 2rem;
     background-color: #FFFFFF;
-    
-}
-.charts{
     flex-direction: column;
-    flex-basis:46%;
-    background-color: #E5E5E5;
-}
-.deals,.tasksChart{
-    flex-basis:50%;
-    margin: 4.3rem;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
-    border-radius: 4px;
-    background-color: #FFFFFF;
+    padding: 16px 24px;
+
 }
 
+.taskInfo{
+    flex-direction: column;
+}
+
+
+.title{
+    flex-basis:7%;
+    border-bottom: 1px solid #EBEFF2;
+    flex-direction: row;
+    
+}
 #title{
     color:#109CF1;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    flex-basis:7%;
-    border-bottom: 1px solid #EBEFF2;
-}
-.sideBarList{
-    list-style-type: none;
-    border: 1px none;
-    border-bottom: #EBEFF2 solid; 
+    margin: auto auto auto 2rem;
 }
 
-li div {
-    display:inline-block;
+.sideBarList{
+    list-style-type: none;
+    
+    border-bottom: #EBEFF2 solid 1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 20%;
+    padding-bottom:0.5rem;
+}
+
+.week{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.week ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
     
 }
-#sierraPic{
+.week ul li{
+    display:flex;
+    align-items: center;
+    margin: 0 0;
+}
+
+.firstLine{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.numOfTasks{
+    font-family: poppins, sans-serif;
+    color:#334D6E;
+}
+
+.showThisWeek{
+    font-family: poppins, sans-serif;
+}
+
+.date{
+    color: #192A3E;
+    font-family: poppins, sans-serif;
+    padding-bottom: 2rem;
+}
+.blue{
+    color:#109CF1;
+    margin-left: 0.5rem;
+    
+}
+
+.blueBackground{
+    background-color: #109CF1;
+    color:white;
+    border-radius: 50%;
+}
+
+
+/* .dateList li{
+    width:25px;
+    height:auto;
+    display:flex;
+    justify-content: center;
+} */
+
+.dateList{
+    width:25px;
+    height:auto;
+    display:flex;
+    justify-content: center;
+}
+
+.statusBar{
+    padding-bottom: 1rem;
+}
+
+.statusContainer{
+    background-color: #EBEFF2;
+    border-radius: 3px;
+    width: 100%;
+}
+.status{
+    width:80%;
+    background-color: #2ED47A;
+    border-radius: 3px;
+    height: 4px;
+
+}
+li{
+    display:flex;
+    justify-content:start;
+    margin-left: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color:#334D6E;
+}
+
+.week li{
+    display:flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+li svg, .settings svg, .toggle svg{
+    margin-right:10px;
+    margin-left:5px;
+}
+
+
+.sierraPic{
     border-radius: 50px;
 }
 
@@ -93,26 +207,198 @@ li div {
 }
 
 #sierraName{
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 21px;
+    margin-bottom: 0.5rem;
 }
 #sierraEmail{
     color:#90A0B7;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+
+.settings{
+    padding-top:2rem;
+    margin-left: 1.5rem;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color:#334D6E;
+}
+
+.toggle{
+    flex-grow:1;
+    position: absolute;
+    bottom: 1.5rem;
+    margin-left: 1.5rem;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color:#90A0B7;
+    font-size: 0.8rem;
+    
+}
+
+.dashboard{
+    color:#109CF1;
+   
+}
+
+#searchBarInput{
+    border:none;
+}
+
+.textInBar{
+    margin-right:4rem;
+}
+
+.barAndDates{
+    flex-direction: row;
+}
+
+
+
+.charts{
+    flex-direction: column;
+    flex-basis:46%;
+    background-color: #E5E5E5;
+}
+.deals{
+    flex-basis:50%;
+    margin: 2rem 2rem 1rem 2rem;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+.tasksChart{
+    flex-basis:50%;
+    margin: 1rem 2rem 2rem 2rem;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+
+/* events */
+.events{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    border-top: solid 1px #EBEFF2;
+}
+
+.event{
+    display:flex;
+    flex-direction: column;
+    min-height: 126px;
+    margin: 1rem 0;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    padding: 16px 16px;
+}
+.eventTitle{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.eventDate{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding-bottom: 1rem;
+}
+
+.eventName{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.dueDate{
+    padding-right: 0.5rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+    opacity: 0.5;
+}
+
+.actualDate{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+}
+.titleText{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #323C47;
+}
+
+.titleType{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #90A0B7;
+}
+
+.personPic{
+    border-radius:50%;
+    margin-right: 1rem;
+}
+
+.personName{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #707683;
+}
+
+.eventStatus{
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
     line-height: 16px;
-
-
-letter-spacing: 0.01em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background-color:#2ED47A;
+    border-radius: 4px;
+    padding:3px 8px;
+    min-width: 84px;
+    align-items: center;
 }
 
-.dashboard{
-    color:#109CF1;
+.eventStatus.ended{
+    background-color:#F7685B;
+    
 }
 
 @media only screen and (max-width: 768px) {
