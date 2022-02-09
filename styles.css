@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 div {
     border: 1px red solid;
-    background-color: aquamarine;
+    
     display:flex;
 }
 
@@ -35,20 +35,96 @@ div {
     width:80%;
 }
 
+.searchBar{
+    flex-basis:7%;
+}
 .tasks{
     flex-direction:row;
+    background-color: #E5E5E5;
+    flex-basis:93%;
 }
-
+.tasksBar{
+    flex-basis:54%;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    margin:70px;
+    background-color: #FFFFFF;
+    
+}
 .charts{
     flex-direction: column;
+    flex-basis:46%;
+    background-color: #E5E5E5;
+}
+.deals,.tasksChart{
+    flex-basis:50%;
+    margin: 4.3rem;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    background-color: #FFFFFF;
 }
 
-
+#title{
+    color:#109CF1;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    flex-basis:7%;
+    border-bottom: 1px solid #EBEFF2;
+}
 .sideBarList{
     list-style-type: none;
+    border: 1px none;
+    border-bottom: #EBEFF2 solid; 
 }
 
 li div {
     display:inline-block;
     
+}
+#sierraPic{
+    border-radius: 50px;
+}
+
+.sierraDetails{
+    margin-left:10px;
+}
+
+#sierraName{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+#sierraEmail{
+    color:#90A0B7;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+
+
+letter-spacing: 0.01em;
+}
+
+.dashboard{
+    color:#109CF1;
+}
+
+@media only screen and (max-width: 768px) {
+    .sideBar{
+        display:none;
+    }
+
+    .tasks{
+        flex-direction:column;
+    }
+
+    .content{
+        width:100%;
+    }
 }
