@@ -86,7 +86,6 @@ div {
 
 .sideBarList{
     list-style-type: none;
-    
     border-bottom: #EBEFF2 solid 1px; 
     display: flex;
     flex-direction: column;
@@ -125,6 +124,18 @@ div {
 
 .showThisWeek{
     font-family: poppins, sans-serif;
+    color:#6A707E;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    display:flex;
+    align-items: center;
+}
+
+.svgMargin{
+    margin-left: 0.5rem;
 }
 
 .date{
@@ -401,6 +412,66 @@ li svg, .settings svg, .toggle svg{
     
 }
 
+/* charts  */
+
+.deals{
+    display:flex;
+    flex-direction: column;
+}
+
+.dealsTitle{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:16px 24px;
+    border: 1px solid #EBEFF2;
+}
+.dealsTitleText{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #192A3E;
+}
+
+.tasksChart{
+    display:flex;
+    flex-direction: column;
+}
+
+.tasksChartTitle{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:16px 24px;
+    border: 1px solid #EBEFF2;
+}
+
+.tasksChartMain{
+    padding: 48px 32px;
+}
+
+.tasksChartList{
+    
+}
+.tasksChartList li{
+    display: list-item;
+    list-style-type:circle;
+}
+
+#yellow{
+    
+}
+
+#green{
+
+}
+
+#red{
+    
+}
 @media only screen and (max-width: 768px) {
     .sideBar{
         display:none;

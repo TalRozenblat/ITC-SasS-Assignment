@@ -106,7 +106,7 @@
           <div class="taskInfo">
             <div class="firstLine">
               <div class="numOfTasks">8 task completed out of 10</div>
-              <div class="showThisWeek">Show:<div class="blue"> This Week</div><svg width="7" height="3" viewBox="0 0 7 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="showThisWeek">Show:<div class="blue"> This Week</div><svg class = "svgMargin" width="7" height="3" viewBox="0 0 7 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.5 3L0.468911 -9.41288e-08L6.53109 4.35844e-07L3.5 3Z" fill="#AEAEAE"/>
                 </svg>
                 </div>
@@ -206,8 +206,33 @@
           </div>
         </div>
         <div class="charts">
-          <div class="deals">deals</div>
-          <div class="tasksChart">taskschar</div>
+          <div class="deals">
+            <div class="dealsTitle">
+              <div class = dealsTitleText>Deals</div>
+              <div class = "showThisWeek">Show: <div class="blue">Monthly </div><svg class = "svgMargin" width="7" height="3" viewBox="0 0 7 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 3L0.468911 -9.41288e-08L6.53109 4.35844e-07L3.5 3Z" fill="#AEAEAE"/>
+                </svg></div>
+            </div>
+            <div class="dealsMain"></div>
+          </div>
+          <div class="tasksChart">
+            <div class="tasksChartTitle">
+              <div class = dealsTitleText>Tasks</div>
+              <div class = "showThisWeek">Show: <div class="blue">This month</div><svg class = "svgMargin" width="7" height="3" viewBox="0 0 7 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 3L0.468911 -9.41288e-08L6.53109 4.35844e-07L3.5 3Z" fill="#AEAEAE"/>
+                </svg></div>
+            </div>
+            <div class="tasksChartMain">
+              <div class="tasksGraph"><img src="./images/tasksGraph.svg" alt=""></div>
+              <div class="tasksChartList">
+                <ul>
+                  <li id = "yellow">Active</li>
+                  <li id = "green">Completed</li>
+                  <li id = "red">Ended</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
