@@ -262,8 +262,19 @@ li svg, .settings svg, .toggle svg{
    
 }
 
+
 #searchBarInput{
     border:none;
+    position: relative;
+    left:2rem;
+    top: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #90A0B7;
 }
 
 .textInBar{
@@ -405,10 +416,13 @@ li svg, .settings svg, .toggle svg{
     padding:3px 8px;
     min-width: 84px;
     align-items: center;
+    display:flex; 
+    justify-content: center;
 }
 
 .eventStatus.ended{
     background-color:#F7685B;
+    
     
 }
 
@@ -472,6 +486,26 @@ li svg, .settings svg, .toggle svg{
 #red{
     
 }
+
+
+.closedDeals ul{
+    list-style-type:circle;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    
+}
+
+.closedDeals li{
+    display: list-item;
+    
+}
+.closedDeals li::marker{
+    color:#109CF1;
+}
+.dealsMain{
+    padding: 1.5rem;
+}
+
 @media only screen and (max-width: 768px) {
     .sideBar{
         display:none;
